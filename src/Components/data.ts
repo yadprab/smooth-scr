@@ -9,6 +9,11 @@ export const data = [
   { id: 7, time: "14:30", price: "$50" },
   { id: 8, time: "15:00", price: "$50" },
   { id: 9, time: "15:30", price: "$60" },
-  { id: 10, time: "16:00", price: "$50" },
-  { id: 11, time: "16:30", price: "$50" },
+  { id: 10, time: "16:00", price: "$80" },
+  { id: 11, time: "16:30", price: "$80" },
+  { id: 17, time: "14:30", price: "$80" },
+  { id: 18, time: "15:00", price: "$80" },
+  { id: 19, time: "15:30", price: "$60" },
+  { id: 20, time: "16:00", price: "$80" },
+  { id: 21, time: "16:30", price: "$80" },
 ];
