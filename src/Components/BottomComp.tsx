@@ -1,8 +1,8 @@
+import { motion, MotionValue } from "framer-motion";
 import { data } from "./data";
-
-const BottomComp = () => {
+const BottomComp = ({ zIndex }: { zIndex: MotionValue<number> }) => {
   return (
-    <div className="bottom--wrapper">
+    <motion.div className="bottom--wrapper" style={{ zIndex }}>
       <ul>
         {data.map((d) => {
           return (
@@ -14,7 +14,7 @@ const BottomComp = () => {
           );
         })}
       </ul>
-    </div>
+    </motion.div>
   );
 };
 export { BottomComp };

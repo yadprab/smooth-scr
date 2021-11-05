@@ -67,16 +67,8 @@ body {
 
 main {
   max-width: 480px;
-}
-
-#dec {
-  padding: 1em;
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--text4);
-  position: absolute;
-  top: 100px;
-  opacity: 0;
+  -ms-touch-action: none;
+      touch-action: none;
 }
 
 .wrap {
@@ -159,6 +151,13 @@ main {
 
 .inner--wrapper {
   padding: 1em;
+}
+
+.bottom--wrapper {
+  position: relative;
+  z-index: 10000;
+  top: 180px;
+  overflow-y: scroll;
 }
 
 .bottom--wrapper ul {

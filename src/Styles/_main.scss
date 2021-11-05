@@ -1,19 +1,10 @@
 main {
     max-width: 480px;
+    touch-action: none;
 }
 
-#dec {
-    padding: 1em;
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--text4);
-    position: absolute;
-    top: 100px;
-    opacity: 0;
-    
-}
 
-.wrap{
+.wrap {
     position: sticky;
     top: 0;
 }
@@ -87,7 +78,12 @@ main {
 }
 
 .bottom--wrapper {
-  
+
+    position: relative;
+    z-index: 10000;
+    top: 180px;
+    overflow-y: scroll;
+
 
     ul {
         display: grid;
