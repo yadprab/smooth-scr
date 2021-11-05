@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+:root {
+  --alpha: 1;
+  --alpha-2: 0.8;
+  --alpha-3: 0.6;
+  --alpha-4: 0.4;
+  --alpha-5: 0.2;
+}
+
+:root {
+  --mainBackground: hsla(53, 27%, 80%, 1);
+  --bg: hsla(0, 0%, 100%, 1);
+  --calBackground: hsla(278, 88%, 20%, 1);
+  --text1: hsla(278, 17%, 5%, 1);
+  --text2: hsla(278, 88%, 98%, 1);
+  --text3: hsla(278, 84%, 17%, 1);
+  --text4: hsla(278, 75%, 14%, 1);
+  --text5: hsla(278, 80%, 83%, 1);
+  --border: 1px solid hsla(0, 8%, 94%, 1)
+;
+}
+
+html {
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  min-width: 100%;
+  font-size: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+svg {
+  width: 24px;
+  height: 24px;
+  pointer-events: none;
+}
+
+body {
+  background-color: var(--bg);
+  font-family: 'Inter', sans-serif;
+  line-height: 1.75;
+  position: relative;
+  -webkit-transition: background 0.4s ease-in-out;
+  transition: background 0.4s ease-in-out;
+}
+
+main {
+  max-width: 480px;
+}
+
+#dec {
+  padding: 1em;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text4);
+  opacity: 0;
+}
+
+.top--wrapper {
+  background: var(--mainBackground);
+  position: relative;
+  overflow: hidden;
+}
+
+.top--wrapper img {
+  position: relative;
+  top: -10px;
+  left: 200px;
+  color: var(--text1);
+}
+
+.top--wrapper h1 {
+  padding: 1em 0.5em;
+  font-size: 3rem;
+  max-width: 210px;
+  color: var(--text3);
+}
+
+.top--wrapper h1 span {
+  display: block;
+  border-bottom: 1px solid var(--calBackground);
+}
+
+.middle--comp {
+  padding: 3em 0;
+  background-color: var(--calBackground);
+  position: relative;
+  z-index: 9000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.middle--comp h2 {
+  color: var(--text2);
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.middle--comp ul {
+  margin: 24px 0 0 0;
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[5];
+      grid-template-columns: repeat(5, auto);
+  gap: 1em;
+}
+
+.middle--comp ul li {
+  text-transform: capitalize;
+  color: var(--text2);
+}
+
+.middle--comp ul .active {
+  border-bottom: 2px solid var(--text2);
+  width: 50px;
+}
+
+.inner--wrapper {
+  padding: 1em;
+}
+
+.bottom--wrapper {
+  overflow: auto;
+}
+
+.bottom--wrapper ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (165px)[2];
+      grid-template-columns: repeat(2, 165px);
+  place-content: center;
+  list-style: none;
+  grid-auto-rows: 155px;
+}
+
+.bottom--wrapper ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: var(--border);
+  border-radius: 10px;
+  background-color: var(--bg);
+}
+/*# sourceMappingURL=Styles.css.map */

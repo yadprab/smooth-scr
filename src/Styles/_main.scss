@@ -1,0 +1,103 @@
+main {
+    max-width: 480px;
+}
+
+#dec {
+    padding: 1em;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text4);
+    opacity: 0;
+}
+
+.top--wrapper {
+    background: var(--mainBackground);
+    position: relative;
+    overflow: hidden;
+
+    img {
+        position: relative;
+        top: -10px;
+        left: 200px;
+        color: var(--text1);
+
+    }
+
+    h1 {
+        padding: 1em 0.5em;
+        font-size: 3rem;
+        max-width: 210px;
+
+        color: var(--text3);
+
+        span {
+            display: block;
+            border-bottom: 1px solid var(--calBackground);
+        }
+    }
+}
+
+.middle--comp {
+    padding: 3em 0;
+    background-color: var(--calBackground);
+    position: relative;
+    z-index: 9000;
+    @include flex-2;
+
+    h2 {
+        color: var(--text2);
+        font-weight: 500;
+        font-size: 1.5rem;
+
+    }
+
+    ul {
+        margin: 24px 0 0 0;
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        gap: 1em;
+
+        li {
+            text-transform: capitalize;
+            color: var(--text2);
+
+
+        }
+
+        .active {
+            border-bottom: 2px solid var(--text2);
+            width: 50px;
+
+        }
+    }
+}
+
+.inner--wrapper {
+    padding: 1em;
+}
+
+.bottom--wrapper {
+    overflow: auto;
+    // position: relative;
+    // top: -20px;
+    // overflow-y: scroll;
+
+    // z-index: 10000;
+
+    ul {
+        display: grid;
+        grid-template-columns: repeat(2, 165px);
+        place-content: center;
+        list-style: none;
+        grid-auto-rows: 155px;
+
+
+        li {
+            @include flex-2;
+            border: var(--border);
+            border-radius: 10px;
+            background-color: var(--bg);
+        }
+    }
+}
