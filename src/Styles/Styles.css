@@ -67,14 +67,14 @@ body {
 
 main {
   max-width: 480px;
-  -ms-touch-action: none;
-      touch-action: none;
 }
 
 .wrap {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  -ms-touch-action: none;
+      touch-action: none;
 }
 
 .top--wrapper {

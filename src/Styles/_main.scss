@@ -1,12 +1,13 @@
 main {
     max-width: 480px;
-    touch-action: none;
+
 }
 
 
 .wrap {
     position: sticky;
     top: 0;
+    touch-action: none;
 }
 
 .top--wrapper {
