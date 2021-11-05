@@ -8,13 +8,13 @@ import { BottomComp } from "./BottomComp";
 import { MiddleComp } from "./MiddleComp";
 import { TopComp } from "./TopComp";
 const Main = () => {
-  const { scrollYProgress, scrollY } = useViewportScroll();
-  const image = useTransform(scrollY, [0, 1], [0, -1000]);
-  const dec = useTransform(scrollYProgress, [0, 1], [0, -70]);
+  const { scrollYProgress} = useViewportScroll();
+  const image = useTransform(scrollYProgress, [0, 1], [0, -1000]);
+  const dec = useTransform(scrollYProgress, [0, 1], [0, -100]);
   const deco = useTransform(scrollYProgress, [0, 1], [0, 1]);
   const hei = useTransform(scrollYProgress, [0, 1], [198, 71]);
   const index = useTransform(scrollYProgress, [0, 1], [9000, 200000]);
-  const height = useTransform(scrollY, [0, 1], [786, 200]);
+  const height = useTransform(scrollYProgress, [0, 1], [786, 200]);
 
   return (
     <AnimateSharedLayout>
